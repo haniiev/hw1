@@ -7,13 +7,16 @@ import java.io.InputStreamReader;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        System.out.print("R = ");
         BufferedReader reader = new BufferedReader( new InputStreamReader(System.in));
         String numa = reader.readLine();
-        int R = Integer.parseInt(numa);
-        final double PI = 3.14;
+        int num1 = Integer.parseInt(numa);
+        String numb = reader.readLine();
+        int num2 = Integer.parseInt(numb);
 
-        System.out.println("P = " + 2 * PI * R);
-        System.out.println("S = " + (PI * R) * (PI * R));
+        System.out.println(num1 + num2);
+        System.out.println(num1 - num2);
+        System.out.println(num1 * num2);
+        System.out.println(num1 / num2);
     }
 }
+
